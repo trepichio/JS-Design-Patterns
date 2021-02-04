@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Publish/Subscribe Pattern: Mail handler use case</title>
+</head>
+<body>
+  <p>
+    New Emails:
+    <span class="newMessageCounter"></span>
+  </p>
+  <div>
+    <p>
+      Sender:
+      <span class="messageSender"></span>
+    </p>
+    <textarea name="messagePreview" class="messagePreview" cols="30" rows="10"></textarea>
+  </div>
+
+
+</body>
+<style>
+  .newMessageCounter {
+    font-size: 1.3rem;
+    color: blue;
+    font-family: 'Courier New', Courier, monospace;
+    padding-bottom: 10px;
+  }
+
+</style>
+<script src="../../publishSubscribe.js"></script>
+<script src="mail_publish_subscribe.js"></script>
+</html>
