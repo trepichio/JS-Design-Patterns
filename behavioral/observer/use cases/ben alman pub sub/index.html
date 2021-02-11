@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ben Alman's Publish / Subscribe</title>
+</head>
+<body>
+  <script id="userTemplate" type="text/html">
+    <li><%= name %></li>
+  </script>
+
+  <script id="ratingsTemplate" type="text/html">
+    <li><strong><%= title %></strong> was rated <%= rating %>/5</li>
+  </script>
+
+  <div id="container">
+    <div class="sampleForm">
+      <p>
+        <label for="twitter_handle">Twitter handle:</label>
+        <input type="text" name="twitter_handle" id="twitter_handle">
+      </p>
+      <p>
+        <label for="movie_rating">Rate the movie you saw:</label>
+        <select id="movie_rating">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5" selected>5</option>
+        </select>
+      </p>
+      <p>
+        <button id="add">Submit rating</button>
+      </p>
+    </div>
+
+    <div class="summaryTable">
+      <div id="users"><h3>Recent users</h3></div>
+      <div id="ratings"><h3>Recent movies rated</h3></div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.12.0/underscore-min.js" integrity="sha512-BDXGXSvYeLxaldQeYJZVWXJmkisgMlECofWFXKpWwXnfcp/R708nrs/BtNLH5cb/5TE7aeYRTDBRXu6kRL4VeQ==" crossorigin="anonymous"></script>
+  <script src="../../ben_alman_jquery_pub_sub.js"></script>
+  <script src="pubSub.js"></script>
+</body>
+</html>
