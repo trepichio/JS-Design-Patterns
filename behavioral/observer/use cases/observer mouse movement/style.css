@@ -1,0 +1,32 @@
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: #f3df49;
+}
+
+.circle {
+  position: absolute;
+  background-color: #238643;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.mouse-position {
+position: fixed;
+top: 20px;
+right: 20px;
+width: 200px;
+height: 100px;
+background-color: black;
+border-radius: 4px;
+padding: 4px 16px;
+color: white;
+}
+
+.mouse-position h4 {
+  color: white;
+  margin: 10px 0;
+}
